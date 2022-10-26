@@ -1,0 +1,46 @@
+ALGORITHM num2
+VAR
+ tab: ARRAY_Of INTEGER [5] ;
+ i:INTEGER;
+ tab: ARRAY_Of INTEGER [5] ;
+ j:INTEGER;
+BEGIN
+     tab:={11,4,6,7,30};
+    write('one arrat')
+    tab:={1,4,6,0,30};
+     write('two arrat')
+
+
+    function test(){
+        BEGIN
+ for i from 0 to 4 step 1 do 
+        for j from 0 to 4 step 1 do 
+REPEAT
+  if ( tab[i]=tab[j])
+  write('output', function sum(t[i],tab[j]))
+  write('sum of overlapping', function fois(tab[i],tab[j]));
+  END_if
+  UNTIL (i , j > tab.length);   
+        END_for
+     END_for
+}
+
+   function sum(x,y)
+   var 
+   s : INTEGER;
+    BEGIN
+    s = 0;
+    s = sum+ x + y  ;
+    write (s);
+    END
+
+ function fois(x,y)
+   var 
+   f : INTEGER;
+    BEGIN
+    f= 0;
+    f = f+ x + y  ;
+    write (f);
+    END
+    
+END
